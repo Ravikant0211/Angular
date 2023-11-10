@@ -11,14 +11,14 @@ import { Component } from "@angular/core";
     `]
 })
 export class UserComponent {
-    username: string = '';
+    username: string = 'Ravi kant';
     constructor() {}
 
-    onEnterUsername(event: any): void {
-        this.username = event.target.value;
-    }
+    // onEnterUsername(event: any): void {
+    //     this.username = event.target.value;
+    // }
 
-    onResetUsername(): void {
-        this.username = '';
-    }
+    // onResetUsername(): void {
+    //     this.username = '';
+    // }
 }
