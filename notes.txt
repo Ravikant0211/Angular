@@ -1,0 +1,19 @@
+-You can't have more than one structural directives
+attached to one element.
+ex- <!-- <li
+          class="list-group-item"
+          *ngFor="let number of numbers"
+          *ngIf="number % 2 == 0">
+          {{ number }}
+        </li> -->
+
+-You can use squarebracets surrounding the directive only 
+when the name of the property or alias is same as that of 
+directive. And then you will have to use the following syntax.
+for example- 
+<p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">Style me with Better directive!</p>
+@Input('appBetterHighlight') highlightColor: string = 'blue';
+
+NOTE- If you are using property binding, and passing a string inside "" marks.
+Then you can use the following syntax-
+[defaultColor]="'yellow'"  -------->> defaultColor="yellow"
