@@ -1,0 +1,14 @@
+<p>User with ID {{user.id}} loaded.</p>
+<p>User name is {{user.name}}</p>
+<hr>
+<a [routerLink]="['/users', 10, 'Anna']">Load Anna (10)</a>
+<!-- So here Angular does not reload this component because
+it is already on that page. Just to avoid performance cost. 
+This page will only be loaded on such click if you are on other
+page.-->
+
+<!-- But if you still want to reload you can do so.
+by using the params property of activatedRoute object.
+-this.route.params.subscribe(callback);
+here params is an observable, because this task will be
+asynchronous. -->
